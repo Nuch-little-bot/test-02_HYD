@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-base: #f8fafc;
+    --bg-surface: #ffffff;
+    --bg-subtle: #f1f5f9;
+    --text-primary: #090d16;
+    --text-secondary: #334155;
+    --text-muted: #475569;
+    --border-color: #cbd5e1;
+    --border-strong: #090d16;
+    --accent-color: #0f172a;
+    --accent-contrast: #ffffff;
+    --highlight-bar: #d97706;
+    --focus-ring: #0284c7;
+  }
+
+  [data-theme="paper"] {
+    --bg-base: #f4f4f0;
+    --bg-surface: #fbfbf9;
+    --bg-subtle: #eaeae5;
+    --text-primary: #181816;
+    --text-secondary: #333330;
+    --text-muted: #575753;
+    --border-color: #cfcfc8;
+    --border-strong: #181816;
+    --accent-color: #181816;
+    --accent-contrast: #fbfbf9;
+    --highlight-bar: #854d0e;
+    --focus-ring: #181816;
+  }
+
+  [data-theme="dark"] {
+    --bg-base: #0a0d14;
+    --bg-surface: #131722;
+    --bg-subtle: #1c2232;
+    --text-primary: #f8fafc;
+    --text-secondary: #e2e8f0;
+    --text-muted: #94a3b8;
+    --border-color: #334155;
+    --border-strong: #f8fafc;
+    --accent-color: #f8fafc;
+    --accent-contrast: #0a0d14;
+    --highlight-bar: #fbbf24;
+    --focus-ring: #38bdf8;
+  }
+
+  [data-theme="yellow"] {
+    --bg-base: #000000;
+    --bg-surface: #0a0a0a;
+    --bg-subtle: #181818;
+    --text-primary: #ffffff;
+    --text-secondary: #fef08a;
+    --text-muted: #fde047;
+    --border-color: #facc15;
+    --border-strong: #facc15;
+    --accent-color: #facc15;
+    --accent-contrast: #000000;
+    --highlight-bar: #facc15;
+    --focus-ring: #facc15;
+  }
+
+  html[data-fontsize="normal"] {
+    font-size: 16px;
+  }
+
+  html[data-fontsize="large"] {
+    font-size: 19px;
+  }
+
+  html[data-fontsize="xlarge"] {
+    font-size: 22px;
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: 'Instrument Sans', 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+    line-height: 1.65;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  h1, h2, h3, h4 {
+    color: var(--text-primary);
+    font-family: 'Bricolage Grotesque', 'Noto Sans TC', system-ui, sans-serif;
+    letter-spacing: -0.015em;
+  }
+
+  .font-display {
+    font-family: 'Bricolage Grotesque', 'Noto Sans TC', system-ui, sans-serif;
+  }
+
+  .font-serif-display {
+    font-family: 'Instrument Serif', 'Noto Serif TC', Georgia, serif;
+  }
+
+  .font-mono-accessible {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  button, a {
+    touch-action: manipulation;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 3px;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "HYD2026 Taichung - Urban Impact Assessment & Base Map",
+  "description": "Accessible, high-contrast urban sustainability impact portal for HYD2026 Taichung featuring Environmental, Social, Economic, Circularity, Mobility, and Health attributes designed for all ages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
